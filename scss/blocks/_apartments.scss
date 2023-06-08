@@ -1,0 +1,25 @@
+.apartments {
+  position: relative;
+  &::before {
+    content: "Ⅲ";
+    right: calc(50% + 555px);
+    transform: translate(50%, 0%);
+    @include decorNumber;
+  }
+}
+
+.apartments-title {
+  margin-bottom: 88px;
+  @include mediaTabled {
+    margin-bottom: 44px;
+  }
+}
+
+.apartments-card {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  @include mediaTabled {
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  }
+}

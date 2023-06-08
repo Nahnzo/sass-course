@@ -1,0 +1,21 @@
+.feedback {
+  padding-bottom: 180px;
+  @include mediaTabled {
+    padding-bottom: 90px;
+  }
+}
+.feedback-title {
+  margin-bottom: 38px;
+  @include mediaTabled {
+    margin-bottom: 19px;
+  }
+}
+.feedback-form {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  align-items: center;
+  @include mediaTabled {
+    grid-template-columns: 1fr;
+  }
+}
